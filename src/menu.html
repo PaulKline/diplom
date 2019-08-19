@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <ul class="navbar" >
+      <li class="navbar__iteam" id="nav_list"><a href="#">Каталог</a>
+        <ul class="visible-menu" id="submenu">
+          <li class="submenu">
+            <span class="submenu__title">Кухня</span>
+            <ul class="submenu-block">
+              <li class="submenu__item"><a href="#"> Обеденные столы</a></li>
+              <li class="submenu__item"><a href="#"> Кухонные уголки</a></li>
+              <li class="submenu__item"><a href="#"> Стулья</a></li>
+              <li class="submenu__item"><a href="#"> Табуреты</a></li>
+              <li class="submenu__item"><a href="#"> Комплектующие</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span class="submenu__title">Гостинная</span>
+            <ul class="submenu-block">
+              <li class="submenu__item"><a href="#">Шкафы</a> </li>
+              <li class="submenu__item"><a href="#">ТВ-тумбы</a> </li>
+              <li class="submenu__item"><a href="#">Журнальные столы</a> </li>
+              <li class="submenu__item"><a href="#">Мягкая мебель</a> </li>
+              <li class="submenu__item"><a href="#">Стелажы</a> </li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span class="submenu__title">Спальная</span>
+            <ul class="submenu-block">
+              <li class="submenu__item"><a href="#"> Комоды</a> </li>
+              <li class="submenu__item"><a href="#"> Тумбы прикроватные</a> </li>
+              <li class="submenu__item"><a href="#"> Туалетные столики</a> </li>
+              <li class="submenu__item"><a href="#"> Кровати</a> </li>
+              <li class="submenu__item"><a href="#"> Матрасы</a> </li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span class="submenu__title">Детская</span>
+            <ul class="submenu-block">
+              <li class="submenu__item"><a href="#">Письменные столы</a> </li>
+              <li class="submenu__item"><a href="#">Компьютерные столы</a> </li>
+              <li class="submenu__item"><a href="#">Кровати детские</a> </li>
+              <li class="submenu__item"><a href="#">Шкафы детские</a> </li>
+              <li class="submenu__item"><a href="#">Комоды и тумбы</a> </li>
+            </ul>
+          </li>
+          <li class="submenu">
+            <span class="submenu__title">Прихожая</span>
+            <ul class="submenu-block">
+              <li class="submenu__item"><a href="#">Обувницы</a> </li>
+              <li class="submenu__item"><a href="#">Шкафы</a> </li>
+              <li class="submenu__item"><a href="#">Зеркала</a> </li>
+              <li class="submenu__item"><a href="#">Вешалки</a> </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- /.visible_menu -->
+      </li>
+      <!-- /.navbar__iteam -->
+      <li class="navbar__iteam"><a href="#">услуги</a> </li>
+      <!-- /.navbar__iteam -->
+      <li class="navbar__iteam"><a href="#">о магазине</a> </li>
+      <!-- /.navbar__iteam -->
+      <li class="navbar__iteam"><a href="#">Акции и распродажа</a> </li>
+      <!-- /.navbar__iteam -->
+      <li class="navbar__iteam"><a href="#">доставка и оплата</a> </li>
+      <!-- /.navbar__iteam -->
+      <li class="navbar__iteam"><a href="#">Контакты</a> </li>
+      <!-- /.navbar__iteam -->
+    </ul>
+    <!-- /.nevbar -->
+
+    
+  </header>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js">
+    $(function(){
+      $('#nav_list').hover(function () {
+        $('#nav_list').children('ul').stop(false, true).fadeIn(333);
+        $('#nav_list').addClass('#submenu');
+      }, function () {
+        $(this).children('ul').stop(false, true).fadeOut(333);
+        $('#nav_list').children('a').removeClass('#submenu');
+      });
+    });
+  </script>
+</body>
+</html>

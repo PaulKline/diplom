@@ -5,92 +5,252 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 <body>
   <header>
-    <ul class="navbar" >
-      <li class="navbar__iteam" id="nav_list"><a href="#">Каталог</a>
-        <ul class="visible-menu" id="submenu">
-          <li class="submenu">
-            <span class="submenu__title">Кухня</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#"> Обеденные столы</a></li>
-              <li class="submenu__item"><a href="#"> Кухонные уголки</a></li>
-              <li class="submenu__item"><a href="#"> Стулья</a></li>
-              <li class="submenu__item"><a href="#"> Табуреты</a></li>
-              <li class="submenu__item"><a href="#"> Комплектующие</a></li>
+    <div class="container">
+      <div class="nav-list">
+        <ul class="navbar">
+          <li class="navbar__item" id="nav_list"><a href="#">Каталог</a>
+            <div class="visible-menu" id="submenu">
+              <div class="submenu">
+                <span class="submenu__title">Кухня</span>
+                <ul class="submenu-block">
+                  <li class="submenu__item"><a href="#"> Обеденные столы</a></li>
+                  <li class="submenu__item"><a href="#"> Кухонные уголки</a></li>
+                  <li class="submenu__item"><a href="#"> Стулья</a></li>
+                  <li class="submenu__item"><a href="#"> Табуреты</a></li>
+                  <li class="submenu__item"><a href="#"> Комплектующие</a></li>
+                </ul>
+              </div>
+              <div class="submenu">
+                <span class="submenu__title">Гостинная</span>
+                <ul class="submenu-block">
+                  <li class="submenu__item"><a href="#">Шкафы</a> </li>
+                  <li class="submenu__item"><a href="#">ТВ-тумбы</a> </li>
+                  <li class="submenu__item"><a href="#">Журнальные столы</a> </li>
+                  <li class="submenu__item"><a href="#">Мягкая мебель</a> </li>
+                  <li class="submenu__item"><a href="#">Стелажы</a> </li>
+                </ul>
+              </div>
+              <div class="submenu">
+                <span class="submenu__title">Спальная</span>
+                <ul class="submenu-block">
+                  <li class="submenu__item"><a href="#"> Комоды</a> </li>
+                  <li class="submenu__item"><a href="#"> Тумбы прикроватные</a> </li>
+                  <li class="submenu__item"><a href="#"> Туалетные столики</a> </li>
+                  <li class="submenu__item"><a href="#"> Кровати</a> </li>
+                  <li class="submenu__item"><a href="#"> Матрасы</a> </li>
+                </ul>
+              </div>
+              <div class="submenu">
+                <span class="submenu__title">Детская</span>
+                <ul class="submenu-block">
+                  <li class="submenu__item"><a href="#">Письменные столы</a> </li>
+                  <li class="submenu__item"><a href="#">Компьютерные столы</a> </li>
+                  <li class="submenu__item"><a href="#">Кровати детские</a> </li>
+                  <li class="submenu__item"><a href="#">Шкафы детские</a> </li>
+                  <li class="submenu__item"><a href="#">Комоды и тумбы</a> </li>
+                </ul>
+              </div>
+              <div class="submenu">
+                <span class="submenu__title">Прихожая</span>
+                <ul class="submenu-block">
+                  <li class="submenu__item"><a href="#">Обувницы</a> </li>
+                  <li class="submenu__item"><a href="#">Шкафы</a> </li>
+                  <li class="submenu__item"><a href="#">Зеркала</a> </li>
+                  <li class="submenu__item"><a href="#">Вешалки</a> </li>
+                </ul>
+              </div>
             </ul>
+            <!-- /.visible_menu -->
           </li>
-          <li class="submenu">
-            <span class="submenu__title">Гостинная</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Шкафы</a> </li>
-              <li class="submenu__item"><a href="#">ТВ-тумбы</a> </li>
-              <li class="submenu__item"><a href="#">Журнальные столы</a> </li>
-              <li class="submenu__item"><a href="#">Мягкая мебель</a> </li>
-              <li class="submenu__item"><a href="#">Стелажы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu">
-            <span class="submenu__title">Спальная</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#"> Комоды</a> </li>
-              <li class="submenu__item"><a href="#"> Тумбы прикроватные</a> </li>
-              <li class="submenu__item"><a href="#"> Туалетные столики</a> </li>
-              <li class="submenu__item"><a href="#"> Кровати</a> </li>
-              <li class="submenu__item"><a href="#"> Матрасы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu">
-            <span class="submenu__title">Детская</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Письменные столы</a> </li>
-              <li class="submenu__item"><a href="#">Компьютерные столы</a> </li>
-              <li class="submenu__item"><a href="#">Кровати детские</a> </li>
-              <li class="submenu__item"><a href="#">Шкафы детские</a> </li>
-              <li class="submenu__item"><a href="#">Комоды и тумбы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu">
-            <span class="submenu__title">Прихожая</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Обувницы</a> </li>
-              <li class="submenu__item"><a href="#">Шкафы</a> </li>
-              <li class="submenu__item"><a href="#">Зеркала</a> </li>
-              <li class="submenu__item"><a href="#">Вешалки</a> </li>
-            </ul>
-          </li>
+          <!-- /.navbar__iteam -->
+          <li class="navbar__item"><a href="#">услуги</a> </li>
+          <!-- /.navbar__iteam -->
+          <li class="navbar__item"><a href="#">о магазине</a> </li>
+          <!-- /.navbar__iteam -->
+          <li class="navbar__item navbar__sail"><a href="#">Акции и распродажа</a> </li>
+          <!-- /.navbar__iteam -->
+          <li class="navbar__item"><a href="#">доставка и оплата</a> </li>
+          <!-- /.navbar__iteam -->
+          <li class="navbar__item"><a href="#">Контакты</a> </li>
+          <!-- /.navbar__iteam -->
         </ul>
-        <!-- /.visible_menu -->
-      </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a href="#">услуги</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a href="#">о магазине</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a href="#">Акции и распродажа</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a href="#">доставка и оплата</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a href="#">Контакты</a> </li>
-      <!-- /.navbar__iteam -->
-    </ul>
+        <div class="nav__buttons">
+          <button class="button nav-button__order"> Вызывать замерщика</button>
+          <button class="button nav-button__call"> Обратный звонок </button>
+        </div>
+      </div>
+      <!-- /.nav-list -->
+    </div>
     <!-- /.nevbar -->
 
-    
+  
+  <section class="section header">
+    <div class="owl-carousel">
+      <div class="slider-item">
+        <div class="owl-block"><span class="owl-title">Диван - "Бруно"</span><span class="owl-subtitle">Мягкая мебель</span>
+        </div>
+        <div>
+          <img class="owl-nav" src="img/header/item-3.jpg" alt="">
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="owl-block"><span class="owl-title">Диван - "Ватник"</span><span class="owl-subtitle">Мягкая мебель</span>
+        </div>
+        <div>
+          <img class="owl-nav" src="img/header-slider/Слой_69.png" alt="">
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="owl-block"><span class="owl-title">Диван - "Бруно"</span><span class="owl-subtitle">Мягкая мебель</span>
+        </div>
+        <div>
+          <img class="owl-nav" src="img/header/item-3.jpg" alt="">
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="owl-block"><span class="owl-title">Диван - "Ватник'"</span><span class="owl-subtitle">Мягкая мебель</span>
+        </div>
+        <div>
+          <img class="owl-nav" src="img/header/item-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.section header -->
+
   </header>
+  <section class="section catalog">
+    <div class="container">
+      <ul class="cotalog-list">
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+        <li class="cotalog-item">
+          <img src="img/kitchen.jpg" alt="">
+          <h4 class="item__titel">Кухня верес</h4>
+          <div class="pricetag">
+            <span class="item__newprice">120руб</span>
+            <span class="item__oldprice"></span>
+          </div>
+          <div class="item__info">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro in beatae magni qui aperiam eligendi blanditiis
+              itaque doloremque! Numquam exercitationem harum asperiores omnis deserunt sapiente et laboriosam. Nisi, rerum
+              dolores.</p>
+          </div>
+        </li>
+      </ul>
+      <!-- /.cotalog-list -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section catalog -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/main.js">
-    $(function(){
-      $('#nav_list').hover(function () {
-        $('#nav_list').children('ul').stop(false, true).fadeIn(333);
-        $('#nav_list').addClass('#submenu');
-      }, function () {
-        $(this).children('ul').stop(false, true).fadeOut(333);
-        $('#nav_list').children('a').removeClass('#submenu');
-      });
-    });
-  </script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js">  </script>
 </body>
 </html>

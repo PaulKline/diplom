@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* кнопки */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,7 +23,6 @@ body a {
 }
 
 .button {
-  max-width: 186px;
   border: none;
   outline: none;
   padding: 10px 35px;
@@ -42,10 +42,20 @@ body a {
 }
 
 .subtitle {
+  position: relative;
   color: #1f1f1f;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.subtitle::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  border: 0.5px solid #1f1f1f;
+  left: 580px;
+  top: 47px;
 }
 
 /* стили для навигационного меню */
@@ -368,6 +378,107 @@ ul.cotalog-list li p {
   width: 100%;
 }
 
+/* Стили для блока с новинками */
+.portfolio {
+  padding-top: 78px;
+  padding-bottom: 88px;
+  background-color: #f3f3f3;
+}
+
+.portfolio-title {
+  margin-bottom: 5px;
+}
+
+.portfolio-subtitle {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-item {
+  position: relative;
+  margin-top: 20px;
+  width: 49.5%;
+}
+
+.portfolio__button {
+  position: absolute;
+  max-width: 207px;
+  top: 285px;
+  left: 25px;
+  background-color: #63564f;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  letter-spacing: 0.35px;
+}
+
+.portfolio__button:hover {
+  background-color: #7dad4b;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.button-velas {
+  padding: 9px 54px;
+}
+
+.button-irrida {
+  padding: 9px 31px 9px 38px;
+}
+
+.button-purrino {
+  padding: 9px 44px;
+}
+
+.button-iddida {
+  padding: 9px 34px;
+}
+
+.portfolio-full__button {
+  display: block;
+  margin: auto;
+  padding: 12px 55px;
+  background-color: #7dad4b;
+}
+
+/* стли для блока с описанием */
+.about {
+  padding-top: 80px;
+  padding-bottom: 111px;
+}
+
+.about-title {
+  margin-bottom: 5px;
+}
+
+.about-subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
 .footer {
   padding-top: 20px;
 }
@@ -497,5 +608,73 @@ ul.cotalog-list li p {
 
 .contact__phone img {
   margin-right: 10px;
+}
+
+.offers {
+  padding-top: 85px;
+}
+
+.offers-title {
+  margin-bottom: 5px;
+}
+
+.offers-subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.offers-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 97px 113px 97px 131px;
+  width: 25%;
+  background-color: #fbfbfb;
+}
+
+.block__title {
+  color: #7dad4b;
+  font-family: "Roboto - Bold";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.block__text {
+  padding-left: 37px;
+  padding-right: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 25%;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

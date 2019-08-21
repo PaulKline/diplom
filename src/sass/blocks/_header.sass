@@ -1,39 +1,52 @@
 .header
+  
 .owl
   position: relative
   margin-left: 14px
   color: #ffffff
   &-carousel
+    height: 768px
     z-index: 1
+  &-item img 
+    height: 768px
   &-dot
     margin-left: 10px
     left: 300px
   &-block
     border: 2px solid green
     background-color: green
-    min-width: 270px
-    height: 70px
+    max-width: 348px
+    padding: 30px 80px 20px 35px
+    min-height: 116px
     position: absolute
-    top: 740px
-    left: 300px
+    top: 600px
+    left: 350px
     color: #fff
     z-index: 99
   &-title
     display: flex
     justify-content: flex-start
-    margin-top: 14px
-    margin-left: 14px
+    font-size: 25px
+    font-weight: 700
+    line-height: 24px
+    // Text style for "Д, иван "Б"
+    color: #ffffff
+    font-family: "Roboto - Bold", sans-serif
+    font-weight: 700
+    letter-spacing: 0.63px
   &-subtitle
     display: flex
     justify-content: flex-start
-    font-size: 12px
     margin-top: 10px
-    font-weight: 100
-    margin-left: 14px
+    color: #ffffff
+    font-family: "Roboto - Regular"
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
   &-dots
     position: absolute
-    top: 735px
-    left: 500px
+    top: 600px
+    left: 650px
     z-index: 100
     width: 100%
     

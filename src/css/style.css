@@ -62,6 +62,7 @@ body a {
 /* стили для навбара */
 .nav {
   padding-top: 28px;
+  padding-bottom: 8px;
 }
 
 .nav-line {
@@ -326,7 +327,12 @@ ul.cotalog-list li p {
 }
 
 .owl-carousel {
+  height: 768px;
   z-index: 1;
+}
+
+.owl-item img {
+  height: 768px;
 }
 
 .owl-dot {
@@ -337,11 +343,12 @@ ul.cotalog-list li p {
 .owl-block {
   border: 2px solid green;
   background-color: green;
-  min-width: 270px;
-  height: 70px;
+  max-width: 348px;
+  padding: 30px 80px 20px 35px;
+  min-height: 116px;
   position: absolute;
-  top: 740px;
-  left: 300px;
+  top: 600px;
+  left: 350px;
   color: #fff;
   z-index: 99;
 }
@@ -353,8 +360,13 @@ ul.cotalog-list li p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 14px;
-  margin-left: 14px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Roboto - Bold", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.63px;
 }
 
 .owl-subtitle {
@@ -364,16 +376,18 @@ ul.cotalog-list li p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-size: 12px;
   margin-top: 10px;
-  font-weight: 100;
-  margin-left: 14px;
+  color: #ffffff;
+  font-family: "Roboto - Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
 }
 
 .owl-dots {
   position: absolute;
-  top: 735px;
-  left: 500px;
+  top: 600px;
+  left: 650px;
   z-index: 100;
   width: 100%;
 }
@@ -459,7 +473,7 @@ ul.cotalog-list li p {
 /* стли для блока с описанием */
 .about {
   padding-top: 80px;
-  padding-bottom: 111px;
+  padding-bottom: 107px;
 }
 
 .about-title {
@@ -477,6 +491,216 @@ ul.cotalog-list li p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+}
+
+/* стили блока с акцией месяца  */
+.sails {
+  position: relative;
+}
+
+.sails-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 315px;
+}
+
+.sails-subtitle {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.sails-title {
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+
+.sails-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 459px;
+}
+
+.sails-buttons {
+  margin-top: 45px;
+}
+
+.sails__button {
+  padding: 12px 77px;
+  background-color: #ee8b15;
+  margin-right: 45px;
+}
+
+.more__button {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: #7dad4b;
+  background-color: Transparent;
+}
+
+.more__button img {
+  margin-left: 30px;
+}
+
+.top-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 75px;
+}
+
+.top-dots button {
+  background-color: Transparent;
+  border: none;
+  outline: none;
+}
+
+.top-dots button:before {
+  content: '0';
+}
+
+.sails-slider {
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.sails-slider::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.draggable {
+  max-width: 1037px;
+}
+
+/* блок с новостями */
+.news {
+  padding-top: 87px;
+  padding-bottom: 40px;
+  background-color: #f3f3f3;
+}
+
+.news__title {
+  margin-bottom: 5px;
+}
+
+.news__subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.news-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news__button {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.news-button {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 55px;
+  padding-right: 55px;
+  background-color: #7dad4b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.news-card {
+  position: relative;
+  padding-bottom: 30px;
+  width: 31.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.news-card h4, .news-card p, .news-card button {
+  padding-left: 30px;
+  padding-right: 25px;
+  max-width: 364px;
+}
+
+.news-card:hover {
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.news-card__title {
+  padding-top: 26px;
+  margin-bottom: 3px;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.news__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 23px;
+}
+
+.news__date {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+  padding: 9px 5px 9px 8px;
+  max-width: 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  background-color: #63564f;
+}
+
+.news__date strong {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -612,6 +836,8 @@ ul.cotalog-list li p {
 
 .offers {
   padding-top: 85px;
+  padding-bottom: 110px;
+  background-color: #f3f3f3;
 }
 
 .offers-title {

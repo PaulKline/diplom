@@ -68,8 +68,4 @@ $(document).ready(function(){
   newwidth = jQuery('.owl-dot').width();
   jQuery('.owl-dot').css("height", newwidth + "px");
 });
-function updateTitles() {
-  const $curr = $('.owl-carousel').find('.owl-item.active');
-  $('.prev').text($curr.prev('.owl-item').text());
-  $('.next').text($curr.next('.owl-item').text());
-}
+

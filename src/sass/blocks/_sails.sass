@@ -1,0 +1,68 @@
+.sails 
+  position: relative
+  &-block
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 500px
+    margin-left: 315px
+
+  &-subtitle
+    margin-top: -30px
+    margin-bottom: 30px
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 18px
+    line-height: 36px
+  &-title
+    margin-bottom: 35px
+    font-size: 32px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 34px
+  &-text
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+    max-width: 459px
+  &-buttons
+    margin-top: 45px
+  &__button
+    padding: 12px 77px
+    background-color: $orange-button
+    margin-right: 45px
+.more__button
+  padding: 15px
+  font-size: 14px
+  font-weight: 700
+  line-height: 30px
+  letter-spacing: normal
+
+  // Text style for "Подробней"
+  color: #7dad4b
+  background-color: Transparent
+  & img 
+    margin-left: 30px
+.top-dots
+  display: flex
+  margin-top: 75px;
+  & button
+    background-color: Transparent
+    border: none
+    outline: none
+    &:before
+      content: '0'
+.sails-slider
+  position: relative
+  right: 0
+  top: 0
+  &::before
+    content: ""
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #fff
+    top: 0
+    left: 0
+.draggable
+  max-width: 1037px

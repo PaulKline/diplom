@@ -1,0 +1,143 @@
+#submenu
+  position: absolute
+  top: 30px
+  z-index: 99999
+  display: none
+  display: flex
+  background-color: #fff
+  transition 0.5s
+  padding: 37px;
+  padding-top: 43px;
+  padding-left: 37px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+.nav
+  display: flex
+  height: 74px
+  align-items: center;
+  justify-content: space-between
+  &-contacts
+    display: inline-block
+    font-size: 13px
+    &__img
+      margin-right: 12px;
+    &__list
+      padding-right: 42px;
+      margin-top: 8px
+      font-size: 14px
+      &:last-child
+        padding-right: 0
+    &__phone
+      color: #000
+      text-decoration: none
+  &__input
+    width: 326px;
+    height: 42px;
+    margin-top: 3px;
+    font-size: 13px
+    margin-right: -26px
+.main
+  padding-right: 4px;
+.navbar
+  display: flex
+  justify-content: space-around
+  &__iteam
+    margin-top: 17px;
+    margin-left: -6px;
+  &__content
+    margin-top: 0px;
+    margin-bottom: 9px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+a.navbar__navigation
+  margin-left: 39px
+  text-decoration: none
+  text-transform: uppercase
+  color: $text-color
+  outline: none
+  font-size: 13px
+  &:hover
+    color: #ffc318
+  &-active
+    font-size: 13px
+    outline: none
+    color: $text-color
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      color: $decorate-color
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        width: 30px
+        top: 22px
+        left: 50%
+        transform: translateX(-50%)
+        border-bottom: 2px solid $decorate-color
+#nav_list
+  position: relative
+.submenu 
+  list-style: none
+  text-transform: uppercase
+  font-weight: 700
+  cursor: pointer
+  &__two
+    margin-right: 42px;
+  &__three
+    margin-right: 41px;
+  &__four
+    margin-right: 41px
+  &-block
+    padding-left: 0
+  &__item
+    padding-left: 0
+    line-height: 24px;
+    margin-right: 11px
+    width: 199px
+    list-style: none
+    &:first-child
+      margin-top: 27px;
+    & a
+      text-decoration: none
+      text-transform: none
+      font-weight: 400;
+      font-size: 14px;
+      color: $text-color
+      &:hover
+        color: #ee8b15
+  &__title
+    position: relative
+    margin-bottom: 30px
+    font-size: 13px;
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      width: 30px
+      top: 29px;
+      border-bottom: 2px solid $decorate-color
+.navbar-btn
+  display: inline-flex
+  justify-content: space-between
+  flex-wrap: wrap
+.button-warning__navbar
+  margin-right: 0
+
+@media (max-width: 1199px)
+  .navbar
+    &__content
+      justify-content: center;
+    &-btn
+      margin-top: 10px
+  .nav
+    &-contacts
+      &__list
+        padding-right: 0px;
+        margin-top: 8px;
+        font-size: 13px;
+        display: flex;
+@media (max-width: 768px)
+  .navbar
+    display: none

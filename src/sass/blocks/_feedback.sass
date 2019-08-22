@@ -1,0 +1,131 @@
+.feedback
+  padding-top: 80px
+  padding-bottom: 200px
+  background-image: url('../img/feedback/feedback-bg.jpg')
+  &__title
+    margin-bottom: 5px
+  &__subtitle
+    display: block
+    text-align: center
+    padding-bottom: 60px
+  &-block
+    position: relative
+  &-button
+    display: block
+    padding: 13px 69px
+    margin-top: 45px
+    background-color: $green-button
+.tab_item
+  padding: 120px 140px 0 135px
+  overflow: auto
+  max-width: 885px
+  height: 481px
+  font-size: 15px
+  font-weight: 400
+  line-height: 25px
+  background-color: #fff
+  & img
+    position: absolute
+    top: 55px
+    left: 55px
+.wrapper
+  position: relative
+.tab
+  margin-bottom: 27px
+  padding: 0px 50px 10px 80px
+  display: flex
+  &s
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 10px
+    right: 0
+.tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
+  padding-left: 30px
+  align-items: center
+  padding-top: 20px
+  text-align: right
+  overflow: hidden
+  & h6
+    font-size: 15px
+    font-weight: 700
+    line-height: 25px
+    font-family: "Roboto - Bold", sans-serif
+    font-weight: 700
+  & span 
+    font-size: 15px
+    font-weight: 700
+    line-height: 25px
+    font-family: "Roboto - Regular", sans-serif
+    font-weight: 400
+.active
+  background-color: #fff
+  padding: 0px 50px 10px 80px
+  border-radius: 0 52px 52px 0
+@media (max-width: 1200px)
+  .tab
+    padding: 0px 20px 10px 30px
+    &_item
+      max-width: 600px
+  .tabs
+    right: 30px
+@media (max-width: 992px)
+  .tab
+    &_item
+      padding: 75px
+      max-width: 500px
+  .tabs
+    right: 0px
+  .feedback-button
+    margin-bottom: 35px
+@media (max-width: 768px)
+  .tab
+    padding: 10px
+    &_item
+      padding: 25px 25px 0 25px 
+      max-width: 358px
+      min-height: 530px
+      & img
+        top: 0
+        left: 0
+  .active
+    padding-left: 0
+  .tabs
+    right: 0px
+  .feedback-button
+    margin-bottom: 35px
+  .tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
+    padding-left: 0
+@media (max-width: 576px)
+  .feedback
+    padding-bottom: 40px
+    padding-top: 40px
+    &__title
+      font-size: 15px
+    &__subtitle
+    &-button
+      margin: auto
+      padding: 5px 15px
+      margin-top: 15px
+      font-size: 10px
+  .tab
+    padding: 0px
+    margin-bottom: 85px
+    &s
+      top: 10px
+      right: 3px
+    & img
+      width: 40px
+      height: 40px
+    &_item
+      padding: 13px
+      max-width: 200px
+      font-size: 12px
+      line-height: 16px
+      min-height: 450px
+  .tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
+    padding: 0
+    & h6, span
+      text-align-last: center
+      font-size: 7px
+      

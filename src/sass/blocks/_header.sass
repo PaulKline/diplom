@@ -1,53 +1,123 @@
 .header
-  
-.owl
+  width: 100%
+.slick-slide
   position: relative
-  margin-left: 14px
-  color: #ffffff
-  &-carousel
-    height: 768px
-    z-index: 1
-  &-item img 
-    height: 768px
-  &-dot
-    margin-left: 10px
-    left: 300px
-  &-block
-    border: 2px solid green
-    background-color: green
-    max-width: 348px
-    padding: 30px 80px 20px 35px
-    min-height: 116px
-    position: absolute
-    top: 600px
-    left: 350px
-    color: #fff
-    z-index: 99
-  &-title
-    display: flex
-    justify-content: flex-start
+.slick-slide img 
+    width: 100%
+    height: 79.5vh
+.draggable 
+  max-width: 100vw
+  height: 90vh
+.slider__dots img 
+  position: relative
+  width: 116px
+  height: 116px
+  background-color: #000000
+  overflow: hidden
+  filter: brightness(40%)
+.slick-active img
+  filter: brightness(100%)
+.slider__dots 
+  left: 690px
+  bottom: 65px 
+  max-width: 100%
+.slick-dots li 
+  width: 150px
+  margin: -14px
+  height: none
+.slider__images
+  position: relative
+.button__header, .button__header3, .button__header2
+  position: absolute
+  left: 350px
+  bottom: 10px
+  background-color: $green-button
+  padding: 35px 110px 35px 30px
+  & h6
     font-size: 25px
     font-weight: 700
     line-height: 24px
-    // Text style for "Д, иван "Б"
     color: #ffffff
-    font-family: "Roboto - Bold", sans-serif
     font-weight: 700
     letter-spacing: 0.63px
-  &-subtitle
-    display: flex
-    justify-content: flex-start
-    margin-top: 10px
+  & span
+    line-height: 24px
     color: #ffffff
-    font-family: "Roboto - Regular"
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
-  &-dots
-    position: absolute
-    top: 600px
-    left: 650px
-    z-index: 100
-    width: 100%
-    
-
+@media (max-width: 1350px)
+  .button__header
+    left: 220px
+  .slider__dots 
+    left: 560px
+@media (max-width: 1350px)
+  .button__header
+    left: 150px
+    padding: 15px 60px 15px 10px
+  .slider__dots 
+    left: 460px
+    bottom: 50px
+    & img 
+      width: 60px 
+      height: 60px
+    & li
+      width: 100px
+@media (max-width: 1350px)
+  .button__header
+    left: 150px
+    padding: 10px
+    & h6 span 
+      font-size: 22px
+  .slider__dots 
+    left: 370px
+    bottom: 40px
+    & img 
+      width: 50px 
+      height: 50px
+    & li
+      width: 100px
+@media (max-width: 991px)
+  .slick-slide img 
+    height: 50vh
+  .button__header
+    left: 100px
+    padding: 10px 20px
+    & h6, span 
+      font-size: 16px
+  .slider__dots 
+    left: 280px
+    bottom: 40px
+    & img 
+      width: 50px 
+      height: 50px
+    & li
+      width: 100px
+@media (max-width: 768px)
+  .button__header
+    left: 50px
+    padding: 10px 20px
+    & h6, span 
+      font-size: 12px
+  .slider__dots 
+    left: 200px
+    bottom: 40px
+    & li
+      width: 90px
+@media (max-width: 576px)
+  .button__header
+    left: 10px
+    bottom: 100px
+    padding: 10px 10px
+    & h6, span 
+      margin: 0
+      font-size: 10px
+      line-height: 16px
+  .slider__dots 
+    left: 10px
+    bottom: 40px
+    & img 
+      width: 40px 
+      height: 40px
+    & li
+      width: 80px

@@ -88,10 +88,30 @@
   .contact__text
     margin-right: 100px
 @media (max-width: 1200px) 
+  .directions
+    &-livingroom
+      margin-left: 0
   .footer-nav
+    padding: 0
+    display: flex
+    justify-content: center
     flex-wrap: wrap
+    & li
+      display: block
+      margin: auto
+      width: 30%
+      text-align: center
+  .directions__item
+    text-align: center
+    margin-left: 0
+    margin-bottom: 20px
+    &:after
+      width: 28px
+      top: 35px
+      right: 110px
   .contact__text
     margin-right: 50px
+
 @media (max-width: 1080px) 
   .contact__text
     margin-right: 10px
@@ -106,6 +126,9 @@
     font-size: 15px
   .contact__phone 
     padding-top: 20px
+  .directions__item
+    &:after
+      right: 70px
 @media (max-width: 768px)
   .footer-contacts
     justify-content: center
@@ -123,3 +146,28 @@
     padding-top: 15px
   .contact__link__last
     margin-left: 0
+  .directions
+    &-livingroom
+      margin-left: 0
+  .footer-nav
+    padding: 0
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    & li
+      display: block
+      margin: auto
+      width: 60%
+      text-align: center
+  .directions__item
+    &:after
+      left: 130px
+      top: 30px
+      border-bottom: 1.5px solid #fff 
+@media (max-width: 576px)
+  .directions__item
+    &:after
+      left: 55px
+      top: 30px
+  .footer-block
+    flex-direction: column

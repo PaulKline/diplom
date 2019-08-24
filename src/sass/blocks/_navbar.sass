@@ -10,16 +10,20 @@
     margin-top: 4px
     background-color: #f9ac00
     &__navbar
+      padding: 0 20px 
+      height: 50px
       margin-right: -15px;
       margin-top: 0px;
   &-success
     background-color: $decorate-color
     margin-top: 4px
     &__navbar
+      padding: 0 30px 
+      height: 50px
       margin-right: -10px;
       margin-left: 13px;
-      padding: 16px 31px;
       margin-top: 0px;
+      margin-bottom: 9px
 .navbar-btnmobile
   display: none
 #submenu
@@ -78,7 +82,6 @@
     margin-left: -6px;
   &__content
     margin-top: 0px;
-    margin-bottom: 9px
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -209,6 +212,15 @@ a.navbar__navigation
   .navbar
     &__content
       max-width: 1210px;
+@media (max-width: 1250px)
+  #submenu
+    width: 600px
+    flex-wrap: wrap
+    & li 
+      margin-right: 30px
+    & ul
+      margin-bottom: 30px
+
 @media (max-width: 1199px)
   .navbar
     &__content
@@ -350,3 +362,19 @@ a.navbar__navigation
       z-index: 9999999;
       font-family: 'Roboto', sans-serif;
       color: #fff;
+  .button-success__navbar
+    margin: 0
+    padding: 10px 5px
+    font-size: 12px
+  .button-warning__navbar
+    margin: 0
+    margin-right: 5px
+    padding: 10px 5px
+    font-size: 12px
+  .navbar-btnmobile 
+    display: flex
+    justify-content: flex-end
+
+
+
+      

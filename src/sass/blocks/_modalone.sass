@@ -15,15 +15,15 @@
   position: relative
   margin: auto
   align-items: center
+  display: flex
+  flex-direction: column
   max-width: 500px
   width: 100%
   min-width: 500px
   background-color: #fff
   padding: 40px 70px 80px 70px
   text-align: center
-  margin: auto
-  display: flex
-  flex-direction: column
+
   &__close
     position: absolute
     right: 0
@@ -40,6 +40,7 @@
     line-height: 25px
     margin-bottom: 25px
   &-form
+    position: reletive
     display: flex
     flex-direction: column
     & input
@@ -60,14 +61,34 @@
     &:hover 
       color: red
       transition: 0.2s
+#callorder-username-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 80px
+  top: 180px
+#callorder-phone-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 80px
+  top: 240px
 @media (max-width: 991px)
   .modal-callorder
     padding: 50px
     min-width: 400px
     max-width: 430px 
+    & input
+      padding: 10px
     &__close
       &:hover 
         color: $text-color
+  #callorder-username-error
+    right: 60px
+    top: 185px
+  #callorder-phone-error
+    right: 60px
+    top: 240px
 @media (max-width: 576px)
   .modal-callorder
     padding: 15px
@@ -77,4 +98,10 @@
       padding: 10px 15px 
     &__title
       font-size: 24px
+  #callorder-username-error
+    right: 60px
+    top: 175px
+  #callorder-phone-error
+    right: 60px
+    top: 233px
   

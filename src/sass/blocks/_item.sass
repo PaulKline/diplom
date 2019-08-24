@@ -1,0 +1,417 @@
+.kind_item
+  background-color: #fafafa
+.item 
+  display: flex
+  padding-top: 25px
+  &-card 
+    
+/* настройки выапдающего меню - каталог товаров  > 992px*/
+.item-catalog
+  max-width: 307px
+.catalog-list 
+  margin-bottom: 20px
+  & a
+  font-size: 13px
+  font-weight: 400
+  line-height: 21px
+  color: #000000
+  text-decoration: underline
+
+.catalog-menu 
+  padding: 0
+  margin: 0
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  & li 
+    color: #000000
+    position: relative
+    opacity: 0.7
+    &:hover 
+      opacity: 1
+    & img
+      position: absolute
+      left: 30px
+      top: 30%
+      heaight: 19px 
+      &:nth-child(3)
+        top: 40%
+        left: 245px
+    & a 
+      display: block
+      text-align: left
+  & li:hover > ul 
+    display: block
+    transition: 0.2s
+.menu__items
+  & li  ul
+    position: absolute
+    z-index: 999
+    min-width: 150px
+    border-left: 15px solid transporant
+    text-align: left
+    top: 0
+    left: 100%
+    display: none
+    background: rgba(252, 255, 255, 0.5)
+    &:first-child
+      margin-top: 0
+.catalog-menu  li 
+  display: block
+  min-width: 280px
+  padding: 19.5px 0 19.5px 90px
+  font-size: 14px
+  font-weight: 400
+  border-bottom: 1px solid black
+  border-left: 1px solid black
+  border-right: 1px solid black
+  &:first-child
+    border-top: 1px solid black
+.menu__items
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06)
+.catalog__title 
+  display: block
+  min-width: 280px
+  padding: 14px 0 14px 35px
+  font-size: 13px
+  font-weight: 700
+  line-height: 27px
+  color: #fff
+  text-transform: uppercase
+  background-color: #63564f
+/* настройки блока с самой карточкой.  */
+/* секция со слайдером. */
+.card-head
+  display: flex
+  flex-direction: column
+  margin-left: 10px
+  width: 470px 
+.card-body 
+    display: flex
+.card-title 
+  padding-top: 42px
+  margin-bottom: 30px
+  font-size: 28px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+  color: #1f1f1f
+  letter-spacing: 0.56px
+img.card_slide
+  margin: 0
+  object-fit: cover
+.card-description
+  padding-top: 40px
+  padding-left: 35px
+  width: 423px
+  &__line
+    margin-top: 30px
+    height: 1px 
+    border-top: 1px solid black
+  &__text 
+    width: 100%
+    font-size: 16px
+    font-weight: 400
+    line-height: 25px
+    margin-top: 56px
+  &__price 
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+  &__cost
+    color: #000000
+    font-size: 15px
+    font-weight: 700
+    line-height: 38px
+    color: #1f1f1f
+  &__pricetag
+    color: #7dad4b
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 700
+    line-height: 26px
+  &__sailprice 
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 700
+    line-height: 26px
+    // Text style for "8, 9 руб."
+    letter-spacing: 0.32px
+    // Text style for "100 руб"
+    color: #000000
+    letter-spacing: 0.32px
+    text-decoration: line-through
+  &__amount 
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__buttons 
+    display: flex
+    margin-top: 40px
+  &__buy 
+    color: #ffffff
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 700
+    line-height: 25.05px
+    width: 186px
+    height: 46px
+    background-color: #ee8b15
+    border: none
+    margin-right: 15px
+  &__busket
+    color: #ffffff
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 700
+    line-height: 25.05px
+    // Text style for "В,  корзин"
+    width: 186px
+    height: 46px
+    background-color: #7dad4b
+    border: none
+.card-description__counter
+  display: flex
+
+.counter-minus
+  display: flex
+  margin-right: 3px
+  align-items: center
+  justify-content: center
+  width: 36px
+  height: 39px
+  border: 1px solid #e0e0e0
+  &:hover
+    cursor: pointer
+  background-color: #f8f8f8
+.counter-plus
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 36px
+  height: 39px
+  border: 1px solid #e0e0e0
+  background-color: #f8f8f8
+  &:hover
+    cursor: pointer
+.counter-number 
+  display: flex
+  margin-right: 3px
+  justify-content: center
+  align-items: center
+  width: 60px
+  height: 39px
+  color: #000000
+  border: 1px solid #e0e0e0
+  font-family: Roboto
+  font-size: 14px
+  font-weight: 400
+  line-height: 15px
+  // Text style for "1, 0"
+  letter-spacing: 0.28px
+  /* секция с характеристиками товара */
+.card-productstory
+  padding-top: 70px
+  &__tab
+    padding: 20px 0 19px 33px
+    cursor: pointer
+    color: #1f1f1f
+    font-size: 14px
+    font-weight: 700
+    line-height: 38px
+    color: #1f1f1f
+  &__tabitem 
+    padding: 36px 48px 33px 49px
+    width: 920px
+    height: 220px
+    background-color: #fff
+    overflow: auto
+    line-height: 25px
+    color: #110f0f
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 400
+.activet
+  color: #ee8b15
+  padding-right: 55px 
+  padding-left: 54px 
+  font-family: Roboto
+  font-size: 14px
+  font-weight: 700
+  line-height: 38px
+  color: #7dad4b
+  background-color: #fff
+.catalog-dots
+  position: relative
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  width: 104%
+  & li img
+    border: 1px solid #ececec
+    margin-top: 12px
+    object-fit: cover
+    width: 146px
+    height: 144px
+img.card__image
+  position: relative
+  padding: 0px
+  background: #fff
+  width: 475px
+  height: auto
+.slider-stars
+  position: absolut
+  width: 78px
+.card-dots
+  position: relative
+img.myPrev 
+  position: absolute
+  width: 12px 
+  height: 20px
+  left: 30px
+  top: -380px
+  z-index: 88 
+  &:hover
+    cursor: pointer
+img.myNext 
+  position: absolute
+  left: 440px
+  top: -380px
+  width: 12px 
+  height: 20px
+  z-index: 9999
+  &:hover
+    cursor: pointer
+/* стили для блока с похожими товарами  */
+.other-card
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  padding-top: 55px
+  padding-bottom: 82px
+  &__desk 
+    display: flex
+    justify-content: space-between
+  &__title 
+    font-size: 21px
+    margin-bottom: 23px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+    color: #1f1f1f
+    letter-spacing: 0.42px
+  &__item
+    display: flex
+    flex-direction: column
+    width: 284px
+    background-color: #fff
+  &__image 
+    padding-top: 45px
+    display: block
+    margin: auto
+    max-width: 195px
+  &__line
+    margin-top: 43px
+    width: 275px
+    height: 1px
+    border: 1px solid #ededed
+    background-color: #a2cf8f
+  &__name
+    margin-top: 25px
+    padding-left: 30px
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 400
+    line-height: 26px
+    letter-spacing: 0.32px
+  &__price 
+    padding-top: 15px
+    padding-left: 8px
+    padding-bottom: 29px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__priceimg
+    margin-top: 0
+    padding-top: 0
+    padding-left: 23px
+  &__pricetagnew 
+    font-size: 17px
+    font-weight: 700
+    letter-spacing: 0.34px
+    color: #7dad4b
+  &__pricetagold
+    padding-right: 25px
+    font-family: "Roboto - Bold"
+    font-weight: 700
+    letter-spacing: 0.32px
+    // Text style for "100 руб"
+    color: #939393
+    font-family: "Roboto - Regular"
+    font-weight: 400
+    letter-spacing: 0.32px
+    text-decoration: line-through
+@media (max-width: 1200px)
+  .card-body
+    flex-direction: column
+  .card-productstory__tabitem
+    width: 600px
+  .other-card__desk
+    flex-wrap: wrap
+    justify-content: center
+  .other-card__item 
+    margin-top: 20px
+    margin-left: 20px
+@media (max-width: 991px)
+  .item
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .card-productstory__tabitem
+    width: 90%
+  .menu__items
+    & img 
+      position: relative
+      padding-left: 0
+    & a 
+      padding-left: 70px
+    & li
+      text-align: center
+      padding: 0
+      transition: 0.2s
+    & li  ul
+      position: relative
+      left: 0
+      padding: 0 
+      width: 100%
+      background-color: $bgc-footer
+      box-shadow: 0 2px 24px rgba(0, 0, 0, 0.50)
+      & a 
+        padding-left: 30px
+        color: #fff
+@media (max-width: 570px)
+  .img.card__image
+    width: 80%
+  .catalog-dots li img
+    display: block
+    margin: auto
+    width: 50%
+    height: auto
+  .catalog-menu li img:nth-child(3)
+    left: 250px
+  .item-catalog
+    margin: auto
+    max-width: 280px
+  .catalog__title 
+    min-width: 280px
+    max-width: 280px
+  .catalog-menu  li 
+    min-width: 280px
+    max-width: 280px
+
+/* настройки выапдающего меню - каталог товаров  < 992px*/
+
+

@@ -40,6 +40,7 @@
     line-height: 25px
     margin-bottom: 25px
   &-form
+    position: relative
     display: flex
     flex-direction: column
     & input
@@ -60,6 +61,18 @@
     &:hover 
       color: red
       transition: 0.2s
+#invite-username-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 10px
+  top: 30px
+#invite-phone-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 10px
+  top: 90px
 @media (max-width: 991px)
   .modal-invite
     padding: 50px

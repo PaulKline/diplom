@@ -10,16 +10,16 @@ label
   user-select: none
 
 .nav__showmenu 
-    position: fixed
+    position: absolute
     z-index: 99999
     display: inline-block
     padding: 5px 10px 10px
-    top: 2px
+    top: 88px
     font-size: 30px
 
 .nav__back 
-    position: fixed
-    top: 0
+    position: absolute
+    top: 88px
     right: 0
     bottom: 0
     left: 0
@@ -57,12 +57,13 @@ label
   transform: rotate(-45deg)
 
 .menu 
-    position: fixed
-    top: 0
+    position: absolute
+    top: 88px
     bottom: 0
     left: 0
     display: block
     z-index: 3
+    height: fit-content
     width: 250px
     padding-left: 20px
     padding-right: 20px
@@ -121,6 +122,6 @@ label
   transform: rotate(180deg)
 .nav__check:checked~.menu 
   transform: translateX(0)
-@media (max-width: 991px)
+@media (max-width: 768px)
   .nav-second 
     display: block

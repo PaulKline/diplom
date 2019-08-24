@@ -7,8 +7,8 @@ $(document).ready(function () {
 	var closeTwo = document.querySelector('#close__two');
 	/* валидация формы секции brif */
 	$('.brif__form').validate({
-		errorElement: "div",
 		errorClass: "invalid",
+		errorElement: "div",
 		rules: {
 			username: {
 				required: true,
@@ -196,6 +196,7 @@ $(document).ready(function () {
 			$('.tabs-block2').hide(),
 			$('.tabs-block3').hide()
 	});
+	
 	$(".menu__showsub").click(function () {
 		$(".menu__showsub2").toggle();
 		$(".menu__showsub3").toggle();
@@ -209,11 +210,16 @@ $(document).ready(function () {
 		$('.next').text($curr.next('.owl-item').text());
 	}
 });
+/* настроиваем hover эффекты */
 $('.button').mouseover(function(){
-	$(this).css("filter", 'opacity(90%');
+	if ($(window).width() >= '992') {
+		$(this).css("filter", 'opacity(90%');
+	};
 });
 $('.button').mouseout(function () {
-	$(this).css("filter", 'opacity(100%');
+	if ($(window).width() >= '992') {
+		$(this).css("filter", 'opacity(100%');
+	};
 });
 
 $('.burger-btn').on('click', function(e){

@@ -1,5 +1,6 @@
 .sails 
   position: relative
+  padding-bottom: 75px
   &-block
     margin-left: 320px
     display: flex
@@ -7,7 +8,7 @@
     width: 100%
     max-width: 500px
   &-subtitle
-    margin-top: 35px
+    margin-top: 75px
     margin-bottom: 30px
     font-weight: 700
     text-transform: uppercase
@@ -104,6 +105,13 @@
     &-text
       max-width: 800px 
       text-align: center
+  .top-dots
+    position: absolute
+    top: 435px
+    z-index: 9999
+    font-size: 20px
+    font-weight: 700
+    left: 250px
 @media (max-width: 992px)
   .sails
     padding-top: 30px
@@ -116,6 +124,9 @@
       text-align: center
     &-subtitle
       margin: auto
+  .top-dots
+    top: 395px
+    left: 150px
 @media (max-width: 768px)
   .sails
     padding-top: 30px
@@ -155,3 +166,5 @@
       padding-left: 0px
       & img
         margin-left: 10px
+  .top-dots
+    display: none

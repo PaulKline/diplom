@@ -6,14 +6,16 @@ body
   margin: 0
   font-family: 'Roboto', sans-serif;
   font-weight: 700
-  & input
-    outline: none
   & a 
     outline: none
     text-decoration: none
     color: $text-color
   & img
     max-width: 100%
+input.invalid 
+  border: 1px solid red 
+  
+
 .container
   margin: auto
   max-width: 1202px 
@@ -45,7 +47,7 @@ body
     width: 45px
     border: 0.5px solid $title-color
     left: 580px
-    top: 47px
+    top: 47px 
 @media (max-width: 1200px) 
   .container
     max-width: 992px

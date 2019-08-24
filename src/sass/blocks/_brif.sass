@@ -1,11 +1,37 @@
 .brif
+  position: relative
+  background-color: #f3f3f3
+  /* задаем бэкграунд для формы по макету */
+  &:after 
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    width: 65% 
+    height: 90%  
+    background-color: #fff  
+  &-bg__line
+    position: absolute
+    top: 24.5%
+    left: 0
+    z-index: 1
+    width: 100% 
+    height: 40.5%  
+    background-color: #fff  
+
   &-block
-    padding-bottom: 100px
+
+    padding-top: 70px
+    padding-bottom: 120px
     display: flex
   &-box
-    padding-top: 90px
-    padding-left: 100px  
+    padding-top: 20px
+    padding-left: 118px  
     max-width: 487px
+    z-index: 3
+  &__banner 
+    z-index: 3
   &__title
     margin-bottom: 15px
     text-align: center
@@ -29,17 +55,22 @@
       left: 165px
       top: 81px
   &__button 
-    max-width: 200px
-    display: block
     margin: auto
     padding: 12px 62px
+    margin-top: 15px
+    max-width: 200px
+    display: block
     background-color: $green-button
   &__form
+    position: relative
     display: flex
     flex-direction: column
 #brif-username
+  
   margin-bottom: 15px
-  padding: 13px 250px 13px 27px 
+  margin-left: -8px
+  padding: 14px 0 14px 25px
+  width: 387px 
   font-size: 14px
   font-weight: 400
   line-height: 30px
@@ -47,18 +78,38 @@
   border: 1px solid $text-color
 #brif-phone
   margin-bottom: 15px
-  padding: 13px 200px 13px 27px 
+  margin-left: -8px
+  padding: 14px 0 14px 25px
+  width: 387px  
   font-size: 14px
   font-weight: 400
   line-height: 30px
   color: #ababab
   border: 1px solid $text-color
+  .error input
+    border: 1px solid $error-color
+#brif-username-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 0
+  top: 40px
+#brif-phone-error
+  position: absolute
+  color: $error-color
+  font-size: 12px
+  right: 0
+  top: 118px
 @media (max-width: 1200px)
   .brif
+    &-block
     &-box
       padding-top: 40px
       max-width: 400px
-      padding-left: 50px
+      padding-left: 10px
+    &__form
+      align-items: center
+      justify-content: center
     &__title
       font-size: 20px
       text-align: center
@@ -68,14 +119,30 @@
         content: ''
         width: 50px
         left: 140px
-        top: 85px
+        top: 60px
     #brif-username
-      padding: 13px 20px 13px 27px;
+      display: block
+      margin-left: 0
+      max-width: auto
+      width: 280px 
     #brif-phone
-      padding: 13px 10px 13px 27px;
+      display: block
+      margin-left: 0
+      max-width: auto
+      width: 280px
+  #brif-username-error
+    right: 65px
+    top: 41px
+  #brif-phone-error
+    right: 65px
+    top: 118px
 @media (max-width: 992px)
   .brif
     background-color: #f3f3f3
+    &-bg__line
+      display: none
+    &::after
+      display: none
     &-block
       flex-direction: column
       align-items: center

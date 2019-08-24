@@ -1,6 +1,6 @@
 .feedback
   padding-top: 80px
-  padding-bottom: 200px
+  padding-bottom: 100px
   background-image: url('../img/feedback/feedback-bg.jpg')
   &__title
     margin-bottom: 5px
@@ -19,11 +19,12 @@
   padding: 120px 140px 0 135px
   overflow: auto
   max-width: 885px
-  height: 481px
+  height: 469px
   font-size: 15px
   font-weight: 400
   line-height: 25px
   background-color: #fff
+  transition: opacity 1s ease 0s
   & img
     position: absolute
     top: 55px
@@ -38,7 +39,7 @@
     position: absolute
     display: flex
     flex-direction: column
-    top: 10px
+    top: 0
     right: 0
 .tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
   padding-left: 30px
@@ -68,7 +69,7 @@
     &_item
       max-width: 600px
   .tabs
-    right: 30px
+    right: 150px
 @media (max-width: 992px)
   .tab
     &_item
@@ -84,7 +85,7 @@
     &_item
       padding: 25px 25px 0 25px 
       max-width: 358px
-      min-height: 530px
+      min-height: 510px
       & img
         top: 0
         left: 0
@@ -113,19 +114,41 @@
     margin-bottom: 85px
     &s
       top: 10px
-      right: 3px
+      right: 120px
     & img
-      width: 40px
-      height: 40px
+      width: 30px
+      height: 30px
+    
     &_item
+      display: block
+      margin: auto
       padding: 13px
-      max-width: 200px
+      max-width: 250px
       font-size: 12px
       line-height: 16px
       min-height: 450px
   .tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
     padding: 0
     & h6, span
-      text-align-last: center
-      font-size: 7px
-      
+      text-align-last: right
+      font-size: 8px
+@media (max-width: 576px)
+  .tab
+    padding: 0px
+    margin-bottom: 85px
+    &s
+      top: 10px
+      left: 0 
+    & img
+      width: 40px
+      height: 40px
+  .tabs-block1, .tabs-block2, .tabs-block3, .tabs-block4
+    position: absolute
+    z-index: -1
+    left: -99999em
+    display: none
+  .active
+    background: none
+  .tab_item img 
+    left: 50px
+

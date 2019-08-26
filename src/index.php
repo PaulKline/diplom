@@ -12,185 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="nav-second">
-    <input class="nav__check" class="nav_icon" type="checkbox" id="showmenu" />
-    <label class="nav__showmenu " for="showmenu"><h6 class="burger"><span class="burger-btn"></span> </h6></label>
-    <label class="nav__back" for="showmenu"></label>
-    <ul class="menu">
-      <li>
-        <a class="menu__item" href="#">Каталог</a>
-        <input class="menu__check" type="checkbox" id="menu2">
-        <label class="menu__showsub" for="menu2">&#9660;</label>
-        <ul class="menu__submenu">
-          <li><a class="menu__item" href="#">Кухня</a>
-            <input class="menu__check" type="checkbox" id="menu3">
-            <label class="menu__showsub2" for="menu3">&#9660;</label>
-            <ul class="menu__submenu">
-              <li><a class="menu__item" href="#">Обеденные столы</a></li>
-              <li><a class="menu__item" href="#">Кухонные уголки</a></li>
-              <li><a class="menu__item" href="#">Стулья</a></li>
-              <li><a class="menu__item" href="#">Табуреты</a></li>
-              <li><a class="menu__item" href="#">Комплектующие</a></li>
-            </ul>
-          </li>
-          <li><a class="menu__item" href="#">Гостинная</a>
-            <input class="menu__check" type="checkbox" id="menu4">
-            <label class="menu__showsub3" for="menu4">&#9660;</label>
-            <ul class="menu__submenu">
-              <li><a class="menu__item" href="#">Обеденные столы</a></li>
-              <li><a class="menu__item" href="#">Кухонные уголки</a></li>
-              <li><a class="menu__item" href="#">Стулья</a></li>
-              <li><a class="menu__item" href="#">Табуреты</a></li>
-              <li><a class="menu__item" href="#">Комплектующие</a></li>
-            </ul>
-          </li>
-      </li>
-      <li><a class="menu__item" href="#">Спальня</a>
-        <input class="menu__check" type="checkbox" id="menu5">
-        <label class="menu__showsub4" for="menu5">&#9660;</label>
-        <ul class="menu__submenu">
-          <li><a class="menu__item" href="#">Комоды</a></li>
-          <li><a class="menu__item" href="#">Тумбы прикроватные</a></li>
-          <li><a class="menu__item" href="#">Туалетные столики</a></li>
-          <li><a class="menu__item" href="#">Кровати</a></li>
-          <li><a class="menu__item" href="#">Матрасы</a></li>
-        </ul>
-      </li>
-      <li><a class="menu__item" href="#">Детская </a>
-        <input class="menu__check" type="checkbox" id="menu6">
-        <label class="menu__showsub5" for="menu6">&#9660;</label>
-        <ul class="menu__submenu">
-          <li><a class="menu__item" href="#">Письменные столы</a></li>
-          <li><a class="menu__item" href="#">Компьютерные столы</a></li>
-          <li><a class="menu__item" href="#">Кровати детские</a></li>
-          <li><a class="menu__item" href="#">Шкафы детские</a></li>
-          <li><a class="menu__item" href="#">Комоды и тумбы</a></li>
-        </ul>
-      </li>
-      <li><a class="menu__item" href="#">Прихожая </a>
-        <input class="menu__check" type="checkbox" id="menu7">
-        <label class="menu__showsub6" for="menu7">&#9660;</label>
-        <ul class="menu__submenu">
-          <li><a class="menu__item" href="#">Обувницы</a></li>
-          <li><a class="menu__item" href="#">Шкафы</a></li>
-          <li><a class="menu__item" href="#">Зеркала</a></li>
-          <li><a class="menu__item" href="#">Вешалки</a></li>
-        </ul>
-      </li>
-    </ul>
-    </li>
-    <li><a class="menu__item" href="#">Услуги</a></li>
-    <li><a class="menu__item" href="#">О магазине</a></li>
-    <li><a class="menu__item" href="#">Акции и распродажа</a></li>
-    <li><a class="menu__item" href="#">Доставка и оплата</a></li>
-    <li><a class="menu__item" href="#">Контакты</a></li>
-    <li><a class="menu__item" href="#"></a><br></li>
-    <li><a class="menu__item" href="#"></a></li>
-    <li><a class="menu__item" type="tel:79504302525"href="#">+7(950)4302525</a></li>
-    <li><a class="menu__item" type="tel:79993504550"href="#">+7(999)3504550</a></li>
-    </ul>
-  </div>
-
-  <!-- <header> -->
-  <div class="container">
-    <div class="nav">
-      <div class="nav-logo"><img src="img/logo.png" alt="#"></div>
-      <input type="text" class="input nav__input" placeholder="Поиск по сайту">
-      <ul>
-        <li class="nav-contacts nav-contacts__list">
-          <img class="nav-contacts__img" src="img/nav_slider/many.png" alt="#"><a href="#">15 000 рублей</a></li>
-        <li class="nav-contacts nav-contacts__list">
-          <img class="nav-contacts__img" src="img/nav_slider/tell.png" alt="phone">
-          <a class="nav-contacts__phone main" href="tel:+7(950)430-25-25">+7 (950) 430-25-25</a>
-        </li>
-        <li class="nav-contacts nav-contacts__list">
-          <img class="nav-contacts__img" src="img/nav_slider/tell.png" alt="phone">
-          <a class="nav-contacts__phone" href="tel:+7(999)350-45-50">+7 (999) 350-45-50</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <hr class="hr nav__hr">
-  <div class="container">
-    <ul class="navbar navbar__content">
-      <li class="navbar__iteam" id="nav_list"><a class="navbar__navigation-active" href="#">Каталог</a>
-        <ul class="visible-menu" id="submenu">
-          <li class="submenu">
-            <span class="submenu__title">Кухня</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Обеденные столы</a></li>
-              <li class="submenu__item"><a href="#">Кухонные уголки</a></li>
-              <li class="submenu__item"><a href="#">Стулья</a></li>
-              <li class="submenu__item"><a href="#">Табуреты</a></li>
-              <li class="submenu__item"><a href="#">Комплектующие</a></li>
-            </ul>
-          </li>
-          <li class="submenu submenu__two">
-            <span class="submenu__title">Гостинная</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Шкафы</a> </li>
-              <li class="submenu__item"><a href="#">ТВ-тумбы</a> </li>
-              <li class="submenu__item"><a href="#">Журнальные столы</a></li>
-              <li class="submenu__item"><a href="#">Мягкая мебель</a></li>
-              <li class="submenu__item"><a href="#">Стеллажы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu submenu__three">
-            <span class="submenu__title">Спальная</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#"> Комоды</a> </li>
-              <li class="submenu__item"><a href="#"> Тумбы прикроватные</a> </li>
-              <li class="submenu__item"><a href="#"> Туалетные столики</a> </li>
-              <li class="submenu__item"><a href="#"> Кровати</a> </li>
-              <li class="submenu__item"><a href="#"> Матрасы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu submenu__four">
-            <span class="submenu__title">Детская</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Письменные столы</a> </li>
-              <li class="submenu__item"><a href="#">Компьютерные столы</a> </li>
-              <li class="submenu__item"><a href="#">Кровати детские</a> </li>
-              <li class="submenu__item"><a href="#">Шкафы детские</a> </li>
-              <li class="submenu__item"><a href="#">Комоды и тумбы</a> </li>
-            </ul>
-          </li>
-          <li class="submenu">
-            <span class="submenu__title">Прихожая</span>
-            <ul class="submenu-block">
-              <li class="submenu__item"><a href="#">Обувницы</a> </li>
-              <li class="submenu__item"><a href="#">Шкафы</a> </li>
-              <li class="submenu__item"><a href="#">Зеркала</a> </li>
-              <li class="submenu__item"><a href="#">Вешалки</a> </li>
-            </ul>
-          </li>
-        </ul>
-        <!-- /.visible_menu -->
-      </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a class="navbar__navigation" href="#">услуги</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a class="navbar__navigation" href="#">о магазине</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a class="navbar__navigation" href="#">Акции и распродажа</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a class="navbar__navigation" href="#">доставка и оплата</a> </li>
-      <!-- /.navbar__iteam -->
-      <li class="navbar__iteam"><a class="navbar__navigation" href="#">Контакты</a> </li>
-      <!-- /.navbar__iteam -->
-      <div class="navbar-btn">
-        <button class="button btn button-warning button-warning__navbar" id="invite-anchor">Вызвать замерщика</button>
-        <button class="button btn button-success button-success__navbar" id="callorder-anchor">Обратный звонок</button>
-      </div>
-    </ul>
-    <div class="navbar-btnmobile">
-      <button class=" btn button-warning button-warning__navbar" id="invite-anchor">Вызвать замерщика</button>
-      <button class=" btn button-success button-success__navbar" id="callorder-anchor">Обратный звонок</button>
-    </div>
-    <!-- /.nevbar
-  </div>
-<!--   </header> -->
-  </div>
+  <? include 'navbars.php'; ?>
   <main>
     <header class="header head-slider">
       <div class="slider header__slider">
@@ -236,12 +58,12 @@
       <div class="container">
         <h2 class="portfolio-title title">новое поступление</h2>
         <!-- /.portfolio-title title -->
-        <span class="portfolio-subtitle subtitle">Новинки каталога</span>
+        <span class="portfolio-subtitle subtitle">Новинки каталога </span>
         <!-- /.portfolio-subtitle subtitle -->
         <div class="portfolio-block">
           <div class="portfolio-item">
             <img class="portfolio__image" src="img/portfolio/kitchen.jpg" alt="кухня велас">
-            <button class="button portfolio__button button-velas">Кухня "Велас"</button>
+            <button class="button portfolio__button button-velas"><a href="item.php">Кухня "Велас"</a> </button>
           </div>
           <div class="portfolio-item">
             <img class="portfolio__image" src="img/portfolio/livingroom.jpg" alt="кухня велас">
@@ -259,7 +81,7 @@
           
         </div>
         <!-- /.portfolio-block -->
-          <button class="button portfolio-full__button">Полный каталог</button>
+          <button class="button portfolio-full__button"><a href="catalog.php">Полный каталог</a> </button>
       </div>
       <!-- /.container -->
     </section>
@@ -513,117 +335,11 @@
       </div>
     </div>
     <!-- /.moadal -->
-    <div class="modal-two" id="modal-two">
-      <div class="modal-two__active" id="invite-active">
-        <div class="modal-invite">
-          <div class="invite-block">
-            <button class="modal-invite__close" id="close__two">&times;</button>
-            <h2 class="modal-invite__title"> Пригласить замерщика </h2>
-            <span class="modal-invite__subtitle">Отправьте заявку на замер и мы вместе расчитаем
-            точную стоимость вашей новой мебели или кухни </span>
-            <form action="#" class="modal-invite-form">
-              <input type="name" name="username" placeholder="Ваше имя" id="invite-username">
-              <input class="phones" type="tel" name="phone" placeholder="Ваш номер" id="invite-phone">
-              <button class="button modal-invite__button">Вызывать</button>
-            </form>
-            <div class="success-invite"></div>
-            <span class="modal-invite__text">Или позвоните нам сами:<br>
-              <a href="tel:79504302525">+7(950)430-25-25</a> <br>
-              <a href="tel:79993504550">+7(999)350-45-50</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php include 'modals.php' ?>
     <!-- /.moadal -->
   </main>
   <!-- mein -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-contacts">
-        <div class="contacts__logo">
-          <img src="img/nav/logo.png" alt="наш логотип">
-        </div>
-        <span class="contact__text">Современная и высококачаственная мебель для вашего дома</span>
-        <div class="contact__phone">
-          <a class="contact__link" type="tel:+79504302525" href="#">
-            <img src="img/nav/phone-icon.png" alt="позвоните нам">
-            <span class="contacts__phone-text">+7 (950) 430-25-25</span>
-          </a>
-        </div>
-        <div class="contact__phone">
-          <a class="contact__link" type="tel:+79993504550" href="#">
-            <img class="contact__link__last" src="img/nav/phone-icon.png" alt="позвоните нам">
-            <span class="contacts__phone-text">+7 (999) 350-45-50</span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- /.footer-contacts -->
-    <div class="footer-content">
-      <div class="container">
-        <ul class="footer-nav">
-          <li class="footer-directions">
-            <ul class="directions__item directions-kitchen"> <a class="directions-catalog"href="#">Кухни</a>
-              <li class="directions__links"><a href="#">Комоды </a> </li>
-              <li class="directions__links"><a href="#">Тумбы прикроватные </a> </li>
-              <li class="directions__links"><a href="#">Кровати </a> </li>
-              <li class="directions__links"><a href="#">Матрасы </a> </li>
-            </ul>
-          </li>
-          <!-- /.footer-directions -->
-          <li class="footer-directions">
-            <ul class="directions__item directions-livingroom"> <a class="directions-catalog" href="#">Гостинные</a>
-              <li class="directions__links"><a href="#">Комоды </a> </li>
-              <li class="directions__links"><a href="#">Тумбы прикроватные </a> </li>
-              <li class="directions__links"><a href="#">Кровати </a> </li>
-              <li class="directions__links"><a href="#">Матрасы </a> </li>
-            </ul>
-          </li>
-          <!-- /.footer-directions -->
-          <li class="footer-directions">
-            <ul class="directions__item directions-bedroom"> <a class="directions-catalog" href="#">Спальни</a>
-              <li class="directions__links"><a href="#">Комоды </a> </li>
-              <li class="directions__links"><a href="#">Тумбы прикроватные </a> </li>
-              <li class="directions__links"><a href="#">Кровати </a> </li>
-              <li class="directions__links"><a href="#">Матрасы </a> </li>
-            </ul>
-          </li>
-          <!-- /.footer-directions -->
-          <li class="footer-directions">
-            <ul class="directions__item directions-childroom"> <a class="directions-catalog" href="#">Детские</a>
-              <li class="directions__links"><a href="#">Комоды </a> </li>
-              <li class="directions__links"><a href="#">Тумбы прикроватные </a> </li>
-              <li class="directions__links"><a href="#">Кровати </a> </li>
-              <li class="directions__links"><a href="#">Матрасы </a> </li>
-            </ul>
-          </li>
-          <!-- /.footer-directions -->
-          <li class="footer-directions directions-exit">
-            <ul class="directions__item"> <a class="directions-catalog"href="#">Прихожие</a>
-              <li class="directions__links"><a href="#">Комоды </a> </li>
-              <li class="directions__links"><a href="#">Тумбы прикроватные </a> </li>
-              <li class="directions__links"><a href="#">Кровати </a> </li>
-              <li class="directions__links"><a href="#">Матрасы </a> </li>
-            </ul>
-          </li>
-          <!-- /.footer-directions -->
-        </ul>
-        <!-- /.footer-nav -->
-      </div>
-    </div>
-    <!-- /.footer-links -->
-    <div class="footer__coopyiraght">
-      <div class="container">
-        <div class="footer-block">
-          <span class="coopyright">© 2008-2019 МебельLike Все права защищены</span>
-          <strong class="author-tag">Создание сайта</strong>
-        </div>
-      </div>
-    </div>
-    <!-- /.footer__coopyiraght -->
-    <!-- /.container -->
-  </footer>
+  <?php include 'footer.php'; ?>
   <!-- /.footer -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src ="js/owl.carousel.min.js"></script>

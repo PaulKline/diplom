@@ -1,0 +1,41 @@
+.popup 
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  align-items: center
+  z-index: 9999
+  justify-content: center
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  
+  &__active 
+    position: relative
+    padding: 20px 60px 
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    border-radius: 52px
+    border-top: 8px solid #ee8b15
+    border-bottom: 8px solid #63564f
+    & img 
+      margin-top: 15px
+    & h6 
+      text-align: center
+      text-transform: uppercase
+  &__close
+    position: absolute
+    right: 5px  
+    top: 40%
+    border: none
+    background-color: #fff
+    color: #63564f
+    font-size: 20px
+    font-weight: 700
+    cursor: pointer
+    &:hover
+      color: #ee8b15
+      transition: 0.4s
+

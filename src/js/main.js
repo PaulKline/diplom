@@ -34,6 +34,10 @@ $(document).ready(function () {
 				data: $('.brif__form').serialize(),
 				success: function (data) {
 					$('.brif__form')[0].reset();
+					$('.popup').css('display', 'flex');
+					$('#popup__closer').on('click', function (){
+						$('.popup').css('display', 'none');
+					});
 				}
 			});
 		}
@@ -67,6 +71,10 @@ $(document).ready(function () {
 				data: $('.modal-callorder-form').serialize(),
 				success: function (data) {
 					$('.modal-callorder-form')[0].reset();
+					$('.popup').css('display', 'flex');
+					$('#popup__closer').on('click', function (){
+					$('.popup').css('display', 'none');
+					});
 				}
 			});
 		}
@@ -100,6 +108,10 @@ $(document).ready(function () {
 					data: $('.modal-invite-form').serialize(),
 					success: function (data) {
 						$('.modal-invite-form')[0].reset();
+						$('.popup').css('display', 'flex');
+						$('#popup__closer').on('click', function (){
+							$('.popup').css('display', 'none');
+					});
 					}
 				});
 			}
